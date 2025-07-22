@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <title>悠然天堂</title>
-  <style>
-    body {
-      background-color: #000000;
-      color: #FFFFFF;
-      font-family: "微軟正黑體", Arial, sans-serif;
-      font-size: 22px;
-      line-height: 1.8;
-      margin: 30px auto;
-      max-width: 600px;
-      padding: 10px;
-    }
+<meta charset="UTF-8" />
+<title>悠然天堂</title>
+<style>
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "微軟正黑體", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.8;
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 10px;
+  }
 
-    h1 {
-      color: #FFD700;
-      font-size: 28px;
-      border-bottom: 1px solid #444;
-      padding-bottom: 5px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
+  h1 {
+    color: #FFD700;
+    font-size: 28px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-    a.button {
-      display: inline-block;
-      background-color: #FFA500;
-      color: #000000;
-      padding: 8px 15px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+  }
 
-    a.button:hover {
-      background-color: #FFB733;
-      text-decoration: none;
-    }
+  .button-container a {
+    background-color: #FFA500;
+    color: #000000;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+    flex: 0 0 calc(25% - 7.5px); /* 四個按鈕一行滿寬度，扣gap */
+    min-width: 120px;
+    max-width: 150px;
+  }
 
-    p {
-      margin: 10px 0;
-    }
-  </style>
+  .button-container a:hover {
+    background-color: #FFB733;
+  }
+</style>
 </head>
 <body>
-  <h1>🌟🌟🌟 悠然 Youran Lineage 天堂 🌟🌟🌟</h1>
-  <p><a href="https://sites.google.com/view/youranlineage" target="_blank" class="button">官方網站</a></p>
-  <p><a href="https://line.me/ti/g2/hU7nR4EWBU97mV-9KZctL4OFmcVT3_04wzebDQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" class="button">遊戲社群</a></p>
-  <p><a href="https://qr-official.line.me/gs/M_785igjiv_GW.png?oat_content=qr" target="_blank" class="button">在線客服</a></p>
-  <p><a href="https://sites.google.com/view/youranlineage/%E5%85%AC%E5%91%8A/1-%E5%AE%98%E6%96%B9%E5%85%AC%E5%91%8A/1-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AA%8C?authuser=0" target="_blank" class="button">更新日誌</a></p>
-  <p><a href="https://sites.google.com/view/youranlineage/%E5%85%AC%E5%91%8A/1-%E5%AE%98%E6%96%B9%E5%85%AC%E5%91%8A/1-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AA%8C?authuser=0" target="_blank" class="button">活動公告</a></p>
+  <h1>🌟🌟🌟 悠然天堂 Youran Lineage 🌟🌟🌟</h1>
+
+  <div class="button-container">
+    <a href="https://sites.google.com/view/youranlineage" target="_blank">官方網站</a>
+    <a href="https://line.me/ti/g2/hU7nR4EWBU97mV-9KZctL4OFmcVT3_04wzebDQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">遊戲社群</a>
+    <a href="https://qr-official.line.me/gs/M_785igjiv_GW.png?oat_content=qr" target="_blank">在線客服</a>
+    <a href="https://sites.google.com/view/youranlineage/%E5%85%AC%E5%91%8A/1-%E5%AE%98%E6%96%B9%E5%85%AC%E5%91%8A/1-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AA%8C?authuser=0" target="_blank">更新日誌</a>
+    <a href="https://sites.google.com/view/youranlineage/%E5%85%AC%E5%91%8A/1-%E5%AE%98%E6%96%B9%E5%85%AC%E5%91%8A/1-%E6%9B%B4%E6%96%B0%E6%97%A5%E8%AA%8C?authuser=0" target="_blank">活動公告</a>
+  </div>
 </body>
 </html>
