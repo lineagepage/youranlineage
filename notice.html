@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>悠然天堂</title>
   <style>
     body {
       background-color: #000000;
       color: #FFFFFF;
       font-family: "微軟正黑體", Arial, sans-serif;
-      font-size: 20px; /* 其他文字字體大小改成20px */
+      font-size: 20px; /* 其他文字字體大小 */
       line-height: 1.8;
       margin: 30px auto;
       max-width: 600px;
@@ -24,7 +24,7 @@
 
     h1 {
       color: #FFD700;
-      font-size: 28px; /* 標題字體大小改成28px */
+      font-size: 28px; /* 標題字體大小 */
       border-bottom: 1px solid #444;
       padding-bottom: 5px;
       text-align: center;
@@ -51,17 +51,8 @@
 </head>
 <body>
   <h1>🌟🌟🌟 悠然天堂 Youran Lineage 🌟🌟🌟</h1>
-  <p>今天是 <span id="today" class="highlight"></span>　歡迎你的加入！</p>
   <p><a href="https://sites.google.com/view/youranlineage" target="_blank">官方網站　點我！！</a></p>
   <p><a href="https://line.me/ti/g2/hU7nR4EWBU97mV-9KZctL4OFmcVT3_04wzebDQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank">遊戲社群　點我！！</a></p>
   <p><a href="https://qr-official.line.me/gs/M_785igjiv_GW.png?oat_content=qr" target="_blank">在線客服：LINE 搜尋 @269bbshu　點我！！</a></p>
-
-  <script>
-    const today = new Date();
-    const formattedDate = today.getFullYear() + '/' +
-                          String(today.getMonth() + 1).padStart(2, '0') + '/' +
-                          String(today.getDate()).padStart(2, '0');
-    document.getElementById("today").textContent = formattedDate;
-  </script>
 </body>
 </html>
